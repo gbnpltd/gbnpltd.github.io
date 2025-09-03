@@ -1,76 +1,272 @@
+<!-- 
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nic Prioleau - AI/ML Engineer & Full-Stack Developer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Nic Prioleau | AI-First Full-Stack Developer & ML Engineer
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">NP</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-    <section id="hero">
-        <h1>Nic Prioleau</h1>
-        <p>AI-First Full-Stack Developer & ML Engineer</p>
-        <p>Building next-generation platforms with AI integration</p>
-    </section>
+  <!-- ***** Header ***** -->
 
-    <section id="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <h3>Verafor</h3>
-                    <p class="project-type">AI-First Professional Networking Platform</p>
-                    <p>Multi-tenant platform with enterprise-grade security, AI-powered trust verification, and real-time skill assessment.</p>
-                    <div class="tech-stack">
-                        <span>FastAPI</span>
-                        <span>React + TypeScript</span>
-                        <span>PostgreSQL</span>
-                        <span>OpenAI GPT-4</span>
-                        <span>Pinecone</span>
-                    </div>
-                </div>
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Nic Prioleau</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Full Stack Engineer based in UK,</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
 
-                <div class="project-card">
-                    <h3>Boilercake</h3>
-                    <p class="project-type">ML-Powered Personalization Engine</p>
-                    <p>Advanced content recommendation system with matrix factorization, semantic similarity, and real-time caching architecture.</p>
-                    <div class="tech-stack">
-                        <span>Python ML</span>
-                        <span>Redis</span>
-                        <span>Semantic Analysis</span>
-                        <span>A/B Testing</span>
-                    </div>
-                </div>
+  <main role="main">
 
-                <div class="project-card">
-                    <h3>SetroAI</h3>
-                    <p class="project-type">AI Integration Platform</p>
-                    <p>Enterprise AI platform with advanced verification systems, cross-platform integration, and automated workflow orchestration.</p>
-                    <div class="tech-stack">
-                        <span>AI/ML</span>
-                        <span>API Integration</span>
-                        <span>Automation</span>
-                        <span>Enterprise Scale</span>
-                    </div>
-                </div>
+    <!-- ***** Work ***** -->
 
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Verafor</h3>
+              <p>
+                AI-first professional networking platform with enterprise-grade security, multi-tenant architecture, and real-time trust verification system.
+              </p>
+              <ul class="work__list">
+                <li>FastAPI</li>
+                <li>React + TypeScript</li>
+                <li>PostgreSQL</li>
+                <li>OpenAI GPT-4</li>
+                <li>Pinecone</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Case Study <span>&rarr;</span>
+                </a>
+                <a href="#" title="Private Repository" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
             </div>
+            <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Verafor Platform" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Boilercake</h3>
+              <p>
+                Advanced ML-powered personalization engine with matrix factorization, semantic similarity analysis, and intelligent caching architecture.
+              </p>
+              <ul class="work__list">
+                <li>Python ML</li>
+                <li>Redis</li>
+                <li>Semantic Analysis</li>
+                <li>A/B Testing</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Case Study <span>&rarr;</span>
+                </a>
+                <a href="#" title="Private Repository">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Boilercake ML Engine" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>SetroAI</h3>
+              <p>
+                Enterprise AI integration platform with advanced verification systems, cross-platform connectivity, and automated workflow orchestration.
+              </p>
+              <ul class="work__list">
+                <li>AI/ML Integration</li>
+                <li>API Development</li>
+                <li>Workflow Automation</li>
+                <li>Enterprise Scale</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Case Study <span>&rarr;</span>
+                </a>
+                <a href="#" title="Private Repository">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="SetroAI Platform" />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-</main>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Clients</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
+          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
+          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
+          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
+          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
+          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I'm an AI-first Full-Stack Developer and ML Engineer specializing in building secure, scalable platforms with advanced AI integration. With expertise in FastAPI, React, and modern ML frameworks, I've architected multi-tenant systems serving enterprise clients with complete data isolation and real-time AI capabilities. My work spans from trust verification platforms to personalization engines, always focusing on security-first architecture and cutting-edge AI implementation.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="#" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Are you looking for a fast-performing and user-friendly website to
+          represent your product or business? or looking for any kind of
+          consultation? or want to ask questions? or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know. I
+          will do my best to respond back. 😊 The quickest way to reach out to
+          me is via an email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:nrprioleau@gmail.com" class="btn">nrprioleau@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
+            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
+
 </html>
